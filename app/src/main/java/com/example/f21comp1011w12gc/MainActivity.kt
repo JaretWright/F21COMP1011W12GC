@@ -15,8 +15,17 @@ class MainActivity : AppCompatActivity() {
         binding.button.setOnClickListener {
             var name = binding.editTextTextPersonName.text.toString()
             if (name.isNotEmpty())
-                binding.textView.setText("Hello $name")
+                setText(name)
         }
+
+    }
+
+    private fun setText(name : String?)
+    {
+        name?.let {
+            binding.textView.setText("Hello $it")
+        }
+
     }
 
 }

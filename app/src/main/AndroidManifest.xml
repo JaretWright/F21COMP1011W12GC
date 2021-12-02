@@ -10,6 +10,9 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.F21COMP1011W12GC">
         <activity
+            android:name=".BestMovieActivity"
+            android:exported="false" />
+        <activity
             android:name=".MainActivity"
             android:exported="true">
             <intent-filter>
